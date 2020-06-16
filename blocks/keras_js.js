@@ -21,3 +21,30 @@ Blockly.Blocks['tf_keras_layers_dense'] = {
  this.setHelpUrl("");
   }
 };
+Blockly.Blocks['keras_dense'] = {
+    init: function() {
+        this.appendValueInput("unit")
+            .setCheck("Number")
+            .appendField("unit");
+        this.appendValueInput("Network")
+            .setCheck("String")
+            .appendField("Network");
+        this.setColour(0);
+     this.setTooltip("");
+     this.setHelpUrl("");
+    }
+};
+
+Blockly.Blocks['keras_sparse'] = {
+  init: function() {
+    this.appendValueInput("unit")
+        .setCheck("Number")
+        .appendField("unit");
+    this.appendValueInput("Network")
+        .setCheck("String")
+        .appendField("Network");
+    this.setColour(0);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+  };
